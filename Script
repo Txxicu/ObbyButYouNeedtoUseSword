@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("Obby But You Need to Use Sword | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Got it", "ButtonInfo", function()
+    print("Clicked")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.73331332, 403.79303, -8272.95508, 0.886401355, 0.00719026988, -0.462861627, 7.48149542e-09, 0.99987936, 0.0155325234, 0.462917477, -0.0137680536, 0.886294425)
+end)
